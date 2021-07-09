@@ -59,6 +59,17 @@
             android:theme="@style/Theme.AppCompat"
             app:shapeAppearanceOverlay="@style/roundedImageCorner" />
 
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -179,67 +190,11 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Desc" />
-
-    <!--<RelativeLayout
-        android:id="@+id/relativeLayout0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Desc"
-        app:layout_constraintVertical_bias="0.0">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/image_Bottom"
-            android:src="@drawable/photo_3"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:layout_alignParentTop="true"
-            app:shapeAppearance="@style/roundedImageCorner"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
-        android:layout_marginStart="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/relativeLayout0"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Desc"
-        app:layout_constraintVertical_bias="0.0">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/image_Bottom0"
-            android:src="@drawable/photo_3"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:layout_alignParentTop="true"
-            app:shapeAppearance="@style/roundedImageCorner"/>
-
-    </RelativeLayout>-->
-
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </LinearLayout>
