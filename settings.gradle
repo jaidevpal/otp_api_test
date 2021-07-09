@@ -1,0 +1,2 @@
+rootProject.name = "OTPAndLayouts"
+include ':app'
