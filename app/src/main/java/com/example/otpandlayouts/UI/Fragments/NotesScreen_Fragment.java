@@ -53,7 +53,7 @@ public class NotesScreen_Fragment extends Fragment {
 
     private void init() {
         gridLayoutManager = new GridLayoutManager(getContext(), 2);
-        binding.recyclerView.setLayoutManager(gridLayoutManager);
+//        binding.recyclerView.setLayoutManager(gridLayoutManager);
 
         Token = getActivity().getIntent().getStringExtra("Token");
 
@@ -89,10 +89,21 @@ public class NotesScreen_Fragment extends Fragment {
 
         Picasso.get().load(avatarUrl).centerCrop().fit().into(binding.imageViewInvites);
         binding.tvNameInvite.setText(name + ", " + age);
+
+        String avatarUrl0 = profileDataModel.getLikes().getProfiles().get(0).getAvatar();
+        String name0 = profileDataModel.getLikes().getProfiles().get(0).getFirstName();
+        String avatarUrl1 = profileDataModel.getLikes().getProfiles().get(1).getAvatar();
+        String name1 = profileDataModel.getLikes().getProfiles().get(1).getFirstName();
+
+        Picasso.get().load(avatarUrl0).centerCrop().fit().into(binding.imageAvatarBottom0);
+        binding.tvNameBottom0.setText(name0);
+        Picasso.get().load(avatarUrl1).centerCrop().fit().into(binding.imageAvatarBottom1);
+        binding.tvNameBottom1.setText(name1);
+
         String anotherName = profileDataModel.getLikes().getProfiles().get(0).getFirstName();
         Log.e(TAG, "Response Name: " + anotherName);
 
-        binding.recyclerView.setAdapter(new NotesScreen_Likes_Adapter(getActivity().getApplicationContext(), profileDataModel.getLikes().getProfiles()));
+//        binding.recyclerView.setAdapter(new NotesScreen_Likes_Adapter(getActivity().getApplicationContext(), profileDataModel.getLikes().getProfiles()));
 
 //        Toast.makeText(getContext(), "UI updated!!!", Toast.LENGTH_SHORT).show();
         loadingStateToggle(false);

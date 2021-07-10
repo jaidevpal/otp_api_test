@@ -184,7 +184,80 @@
 
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rltl_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image_Avatar_Bottom_0"
+                android:layout_width="160dp"
+                android:layout_height="260dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo_3"
+                android:theme="@style/Theme.AppCompat"
+                app:shapeAppearance="@style/roundedImageCorner" />
+
+            <TextView
+                android:id="@+id/tv_Name_Bottom_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/image_Avatar_Bottom_0"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="bottom"
+                android:hint="Name"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltl_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image_Avatar_Bottom_1"
+                android:layout_width="160dp"
+                android:layout_height="260dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo_3"
+                android:theme="@style/Theme.AppCompat"
+                app:shapeAppearance="@style/roundedImageCorner" />
+
+            <TextView
+                android:id="@+id/tv_Name_Bottom_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/image_Avatar_Bottom_1"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="bottom"
+                android:hint="Name"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -195,6 +268,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Desc" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_Desc" />-->
 
 </LinearLayout>
