@@ -107,6 +107,7 @@ public class NotesScreen_Fragment extends Fragment {
 
 //        Toast.makeText(getContext(), "UI updated!!!", Toast.LENGTH_SHORT).show();
         loadingStateToggle(false);
+         binding.mainLayout.setVisibility(View.VISIBLE);
     }
 
     @Override
